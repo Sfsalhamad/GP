@@ -4,6 +4,8 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/page-1/android-large-1.dart';
+import 'package:myapp/auth/Home.dart';
+
 // import 'package:myapp/page-1/android-large-3.dart';
 // import 'package:myapp/page-1/android-large-4.dart';
 // import 'package:myapp/page-1/android-large-5.dart';
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
 		),
 		home: Scaffold(
 		body: SingleChildScrollView(
-			child: Scene(),
+			child: Home(),
 		),
 		),
 	);
