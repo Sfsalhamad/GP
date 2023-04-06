@@ -55,9 +55,6 @@ class _SignUpFormState extends State<SignUpForm> {
   String _maritalStatus = 'single';
   String _password = '';
   bool _termsChecked = true;
-
-  List<DropdownMenuItem<int>> genderList = [];
-
   @override
   Widget build(BuildContext context) {
     // Build a Form widget using the _formKey we created above
@@ -93,7 +90,9 @@ class _SignUpFormState extends State<SignUpForm> {
           key: _passKey,
           obscureText: true,
           decoration: const InputDecoration(
-              hintText: 'Password', labelText: 'Enter Password'),
+              hintText: 'Password',
+              labelText: 'Enter Password',
+              suffixIcon: Icon(Icons.password_rounded)),
           validator: (value) {
             if (value!.isEmpty) {
               return 'Please Enter password';
